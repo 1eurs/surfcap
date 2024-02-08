@@ -3,19 +3,7 @@ import { CameraController } from "./CameraController";
 import * as THREE from "three";
 import { Canvas } from "react-three-fiber";
 
-interface ReactThreePcdViewerProp {
-  url: string;
-  color: string;
-  pointSize: number;
-  cameraPosition: THREE.Vector3;
-}
-
-const ReactThreePcdViewer = ({
-  url,
-  color,
-  pointSize,
-  cameraPosition,
-}: ReactThreePcdViewerProp) => {
+const ReactThreePcdViewer = ({ url, color, pointSize, cameraPosition }) => {
   return (
     <div className="canvas-container ">
       <Canvas>
