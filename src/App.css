@@ -1,0 +1,235 @@
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  overscroll-behavior-y: none;
+  font-family: "Inter var", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #ddd;
+  background: #000000;
+}
+
+a {
+  pointer-events: all;
+  color: #ddd;
+  text-decoration: none;
+}
+
+/* overlay */
+.overlay-container {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-link {
+  position: absolute;
+  bottom: 40px;
+  left: 90px;
+  font-size: 13px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.overlay-title {
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-family: "anton";
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  pointer-events: none;
+}
+
+.overlay-logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-size: 13px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  pointer-events: none;
+}
+.btn {
+  position: absolute;
+  bottom: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  border: 0;
+  font-family: "Inter var", sans-serif;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.old-scans {
+  width: 200px;
+  background-color: #e6e6e6;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.item {
+  color: rgb(0, 0, 0);
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/*  main menu */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.item {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-disabled {
+  background-color: #f0f0f0; 
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: not-allowed;
+  color: #565252; 
+  pointer-events: none; 
+}
+
+
+.itemsmall {
+  display: inline-block;
+  background-color: #fff;
+  color: #000000;
+  padding: 0.5rem;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  margin-left: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item:hover {
+  background-color: #e0e0e0;
+}
+.item {
+  margin: 1rem;
+}
+
+
+/*  controls */
+.grid-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  padding: 20px;
+}
+
+#grid-item {
+  padding: 1rem;
+  margin: 1rem 2rem;
+  border-radius: 15px;
+  border: 3px solid #eeeeee;
+  z-index: 1;
+  /* ... */
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+/* canves */
+.canvas-container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* go back */
+.go-back {
+  position: absolute;
+  right: 250px;
+  bottom: 100px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  border: 0;
+  font-family: "Inter var", sans-serif;
+  cursor: pointer;
+}
+.btn2:hover {
+  background-color: #45a049;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+.c1 input {
+  width: 5.7rem;
+}
+.c2 button {
+  margin: 0.1rem;
+}
+.c2 label {
+  margin-right: 0.2rem;
+}
+.ButtonHideMenu {
+  padding: 1rem;
+  border-radius: 0.2rem;
+  margin-left: 16.3rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
