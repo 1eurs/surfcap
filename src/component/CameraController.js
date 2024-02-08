@@ -2,10 +2,7 @@ import { useThree } from "@react-three/fiber";
 import { useEffect } from "react";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
-export interface CameraControllerProp {
-  position: THREE.Vector3;
-}
-export const CameraController = ({ position }: CameraControllerProp) => {
+export const CameraController = ({ position }) => {
   const { camera, gl, scene } = useThree();
 
   useEffect(() => {
